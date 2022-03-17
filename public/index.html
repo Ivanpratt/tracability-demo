@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeddy's Games</title>
     <link rel="stylesheet" href="styles.css">
+    <script data-main="scripts/app" src="require.js"></script>
 </head>
 <body>
     <h1>Welcome to the website</h1>    
@@ -13,6 +14,14 @@
     <p>About Jeddy Hwang: Jeddy's devotion to video games since his youth has continued to expand as he spends every waking hour researching and playing games. His years of professional experience in writing occupations have validated his talent of English composition as he continues to combine his passion for video games and the geek world with his aptitude to write. Whether it was technical engineering writing for schooling or creative stories for personal reasons, his ability to adapt to different writing styles, subjects, and context have provided him opportunities to work as a writing teacher's assistant, reading tutor, and report writing for an engineering firm. "Shoot first, ask questions later" describes Jeddy's love for FPS games. His early years dedicated to MLG Halo have evolved into an all encompassing love for all FPS games; competitive or otherwise. Target sports have always been a passion and being able to land precision shot after shot in the virtual, accessible world of video games is a luxury not worth overlooking. Today, his experience in FPS video games are dominated by Destiny 2, though Halo still shares the nest. When not playing games, Jeddy will oftentimes get lost in the realm of movies and books as he believes every work of art has one good facet worth discussing. His love for the nerd community will continue to guide his interests for the foreseeable future. However, he believes video games are the best form of art to experience due to its combination of both movies and writing, making them even more interesting to write about. Video games are a world you can get lost in whenever you want, thus the possibilities of experience are endless.</p>
     <p id="games">Jeddy's favorite Games are: <a href="https://www.bungie.net/7/en/Destiny/Buy?">Destiny 2,</a> <a href="https://2k.com/en-US/game/bioshock-infinite/">Bioshock Infinite,</a> <a href="https://2k.com/en-US/game/borderlands-2/">Borderlands 2,</a> <a href="https://2game.com/en-us/the-elder-scrolls-v-skyrim-dragonborn">and The Elder Scrolls V: Skyrim - Dragonborn.</a></p>
     <h1>Please buy the Games</h1>  <button id="button">Click Here</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          requirejs(["scripts/lodash"], function (lodash) {
+            const headerEl = document.getElementById("header");
+            headerEl.textContent = lodash.upperCase("hello world");
+          });
+        });
+      </script>
     <script src="index.js"></script>
 </body>
 </html>
