@@ -25,6 +25,7 @@ rollbar.log("Hello world!");
 
 app.get("/api/error", (req, res) => {
     rollbar.error("error button pressed");
+    console.log("errr button as been pressed")
     res.status(200).send();
   });
 
