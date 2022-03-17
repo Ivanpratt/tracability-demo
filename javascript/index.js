@@ -1,7 +1,7 @@
 
 console.log("Jeddy")
 
-let button = document.getElementsById('button')
+let button = document.getElementById('button')
 
 
 let myfunction = function() {
