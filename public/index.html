@@ -15,12 +15,11 @@
     <p id="games">Jeddy's favorite Games are: <a href="https://www.bungie.net/7/en/Destiny/Buy?">Destiny 2,</a> <a href="https://2k.com/en-US/game/bioshock-infinite/">Bioshock Infinite,</a> <a href="https://2k.com/en-US/game/borderlands-2/">Borderlands 2,</a> <a href="https://2game.com/en-us/the-elder-scrolls-v-skyrim-dragonborn">and The Elder Scrolls V: Skyrim - Dragonborn.</a></p>
     <h1>Please buy the Games</h1>  <button id="button">Click Here</button>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        
           requirejs(["scripts/lodash"], function (lodash) {
             const headerEl = document.getElementById("header");
             headerEl.textContent = lodash.upperCase("hello world");
           });
-        });
       </script>
     <script src="index.js"></script>
 </body>
