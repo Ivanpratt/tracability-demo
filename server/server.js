@@ -24,7 +24,8 @@ rollbar.log("Hello world!");
 
 
 app.get("/api/error", (req, res) => {
-    rollbar.error("Hello world!");
+    rollbar.error("error button pressed");
+    res.status(200).send();
   });
 
 
