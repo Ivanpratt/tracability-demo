@@ -13,6 +13,7 @@
     "axios": "^0.26.1",
     "cors": "^2.8.5",
     "express": "^4.17.3",
+    "requirejs": "^2.3.6",
     "rollbar": "^2.24.1"
   },
   "repository": {
